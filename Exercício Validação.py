@@ -44,6 +44,9 @@ class Cadastro:
         
 
     cad = Cadastro()
+    cad.InserirIdade(17)
+    cad.InserirSaldo(500)
+    cad.InserirNome(Stefhany)
     
     
         
