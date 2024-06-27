@@ -7,17 +7,18 @@ class Cadastro:
         nomePreenchido = self.ValidaNome (nome)
         if nomePreenchido == True:
             self.nome = nome 
-            print("nome não pode estar vazio")
+            print("Cadastrado com sucesso")
+    
     
     def ValidaNome(self, nome):
         if len(nome) == 0 :
-            print("Cadastrado com suceso")
+            print("nome não pode estar vazio")
             return False
         else:
             return True
         
     def InserirIdade(self, idade):
-        idadeCorreta =  self. Validade(idade)
+        idadeCorreta =  self. ValidaIdade(idade)
         if idadeCorreta == True:
             self.idade = idade
             print("idade precisa ser maio que 18")
@@ -30,7 +31,7 @@ class Cadastro:
             return True
         
     def InserirSaldo(self, saldo):
-        saldoCorreto = self.ValidadeSaldo (saldo)
+        saldoCorreto = self.ValidaSaldo (saldo)
         if saldoCorreto == True:
              self. saldo = saldo
              print("Valor cadastro não pode ser negativo")
@@ -46,7 +47,7 @@ class Cadastro:
     cad = Cadastro()
     cad.InserirIdade(17)
     cad.InserirSaldo(500)
-    cad.InserirNome(Stefhany)
+    cad.InserirNome("Stefhany")
     
     
         
